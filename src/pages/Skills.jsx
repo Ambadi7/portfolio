@@ -11,7 +11,7 @@ const Skills = () => {
           The Skills, tools and technologies I use :
         </div>
         {/* Grid */}
-        <div className="grid grid-flow-row gap-10 grid-cols-2 lg:grid-cols-4 ">
+        <div className="grid grid-flow-row gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
           <div className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform hover:border-2 hover:shadow-lg hover:scale-115 hover:animate-none ease-in-out animate-pulse ">
             <div>
               <img src="/images/js.png" alt="JavaScript" className="w-7 rounded "/>
