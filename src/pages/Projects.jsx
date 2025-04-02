@@ -29,7 +29,7 @@ const Projects = () => {
             project.map((item)=>{
               return(
                 <motion.div {...fadeIn}  
-                  key={item.id} className="w-84 h-70 bg-black hover:scale-105  rounded-md ">
+                  key={item.id} className="w-7/8 md:w-84 h-70 bg-black hover:scale-105  rounded-md ">
                   <div><img src={item.image} alt="" className="h-50 rounded-t-md"/></div>
                   {console.log(item.image)}
                   <div className="hidden">{item.description}</div>

@@ -44,9 +44,9 @@ const Contact = () => {
         </div>
 
         {/* 2 */}
-        <div className="flex flex-col-reverse md:flex-row md:justify-between h-auto font-roboto font-light  text-gray-300">
+        <div className="flex flex-col-reverse md:flex-row md:justify-between w-[300px] lg:w-[380px] h-auto font-roboto font-light  text-gray-300">
           {/* connect */}
-          <div className="flex flex-col justify-center items-center w-[380px]  p-6 ">
+          <div className="flex flex-col justify-center items-center w-[300px] lg:w-[380px]  p-6 ">
             <h6 className="  text-xl font-extralight text-center pb-2 hover:scale-105">Connect Me</h6>
             
             <div className="flex flex-col font-poppins font-extralight gap-2">
@@ -57,20 +57,20 @@ const Contact = () => {
           </div>
 
           {/* Message section */}
-          <form onSubmit={sendEmail} ref={form} className='p-2 md:p-4 w-[380px] font-montserrat text-gray-300'>
+          <form onSubmit={sendEmail} ref={form} className='p-2 md:p-4 w-[300px] lg:w-[380px] font-montserrat text-gray-300'>
             <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
               <h6>Name</h6>
-              <input type="text" name='name' className='w-5/6 md:w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+              <input type="text" name='name' className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
             </div>
             <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
               <h6>Email</h6>
-              <input type="email" name='email' className='w-5/6 md:w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+              <input type="email" name='email' className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
             </div>
             <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
               <h6>Message</h6>
-              <input type="text" name='message' className='w-5/6 md:w-full h-10 outline-none bg-transparent focus:border-fuchsia-950  focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+              <input type="text" name='message' className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950  focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
             </div>
-            <div className='flex w-5/6 md:w-full justify-center  pt-6 '>
+            <div className='flex w-full justify-center  pt-6 '>
               <button type='submit' className='w-40 h-10  border border-fuchsia-950 rounded-xl px-4  hover:bg-fuchsia-950 hover:scale-105 focus:bg-fuchsia-950 font-semibold' >Send Message</button>
             </div>
 
