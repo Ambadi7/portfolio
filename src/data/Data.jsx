@@ -41,9 +41,9 @@ export const Data = [
     },
     {
         "id":6,
-        "projectName" : "Contact-List",
+        "projectName" : "Excuse-Finder",
         "description" : "",
-        "image" : "/images/project-contact-list.jpg",
+        "image" : "/images/project-excuse-finder.jpg",
         "liveLink" :"",
         "gitHub-Repo" :""
     }

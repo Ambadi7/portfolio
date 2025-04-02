@@ -10,7 +10,7 @@ const Navbar = () => {
           <h1>Logo </h1>
           <h1>Ambadi</h1>
         </div>
-        <div className={` absolute md:static flex flex-col md:flex-row gap-6 text-gray-300 transition-all duration-500 ${extendNavbar ? "top-18 left-80" : "top-18 left-[900px] "}`}>
+        <div className={` absolute md:static flex flex-col md:flex-row gap-6 text-gray-300 transition-all duration-500 ${extendNavbar ? "top-18 left-[78vw]" : "top-18 left-[900px] "}`}>
           <h2>Home</h2>
           <h2>About</h2>
           <h2>Projects</h2>

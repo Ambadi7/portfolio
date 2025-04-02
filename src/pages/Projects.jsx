@@ -31,9 +31,19 @@ const Projects = () => {
                 <motion.div {...fadeIn}  
                   key={item.id} className="w-auto md:w-84 md:h-70 bg-black hover:scale-105  rounded-md ">
                   <div><img src={item.image} alt="" className="h-50 rounded-t-md"/></div>
-                  {console.log(item.image)}
                   <div className="hidden">{item.description}</div>
-                  <div>{item.projectName}</div>
+                  <div className="p-2 px-8">
+                    <div className="flex justify-center pb-2">{item.projectName}</div>
+                    <div className="flex gap-1 justify-between">
+                      <div className="flex cursor-pointer rounded-md w-3/7 justify-center hover:scale-115 hover:text-fuchsia-950">
+                        <h6>Live Demo</h6>
+                      </div>
+                      <div className="flex cursor-pointer  rounded-md w-4/7 justify-center hover:scale-115 hover:text-fuchsia-950">
+                        <h6 className="">GitHub-Repository</h6>
+                      </div>
+                    </div>
+                  </div>
+                  
                 </motion.div>
               )
 

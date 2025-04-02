@@ -9,12 +9,13 @@ const Home = () => {
       {/* LEFT Details*/}
       <div className="flex flex-col justify-center gap-10 w-full md:w-[500px] lg:w-[600px] h-full rounded font-Ubuntu-mono p-4">
         {/* 1 */}
-        <div className='text-xl'>
+        <div className='text-3xl'>
+        <h1>Welcome!</h1>
           <h1>Hi! I'm Ambadi K R</h1>
         </div>
         {/* 2 */}
         <div className='text-3xl md:text-5xl '>
-          Software Engineer
+          <h1>Software Engineer</h1>
         </div>
         {/* 3 */}
         <div className='flex gap-4 h-auto items-center'>
