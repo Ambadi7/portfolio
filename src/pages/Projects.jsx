@@ -29,7 +29,7 @@ const Projects = () => {
               return(
                 <motion.div {...fadeIn}  
                   className="w-84 h-70 bg-black hover:scale-105  rounded-md ">
-                  <div><img src={item.image} alt="" className="h-50 rounded-t-md"/></div>
+                  <div><img src="https://github.com/Ambadi7/react-todo-list/raw/main/ss1.png" alt="" className="h-50 rounded-t-md"/></div>
                   <div className="hidden">{item.description}</div>
                   <div>{item.projectName}</div>
                 </motion.div>

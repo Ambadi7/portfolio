@@ -3,7 +3,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
-
 const Home = () => {
   return (
     <div className="flex flex-col md:flex-row p-5  gap-5 h-[500px] w-full rounded-xl">
