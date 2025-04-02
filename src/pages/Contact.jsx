@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
 
         {/* 2 */}
-        <div className="flex flex-col-reverse md:flex-row md:justify-between w-[300px] lg:w-[380px] h-auto font-roboto font-light  text-gray-300">
+        <div className="flex flex-col-reverse md:flex-row md:justify-between w-full h-auto font-roboto font-light  text-gray-300">
           {/* connect */}
           <div className="flex flex-col justify-center items-center w-[300px] lg:w-[380px]  p-6 ">
             <h6 className="  text-xl font-extralight text-center pb-2 hover:scale-105">Connect Me</h6>

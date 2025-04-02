@@ -35,8 +35,8 @@ const Home = () => {
       </div>
       {/* RIGHT image*/}
       <div className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-full rounded ">
-        <img src="/images/home2.jpg" className=' h-70 md:h-[450px] lg:h-[480px] '  alt="" />
-        {/* <img src="/src/assets/images/home2.png" alt="" /> */}
+        <img src="/images/home2.jpg" className=' h-60 md:h-[450px] lg:h-[480px] '  alt="" />
+        {/* <img src="/images/home2.png" className=' h-70 md:h-[450px] lg:h-[480px] ' alt="" /> */}
       </div>
         
     </div>
