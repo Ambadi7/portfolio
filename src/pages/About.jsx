@@ -1,8 +1,13 @@
-
+import { motion } from "framer-motion"
 
 const About = () => {
   return (
-    <div className="flex flex-col h-auto w-full rounded-xl justify-center items-center ">
+    <motion.div
+     initial={{opacity : 0,y:50}}
+     whileInView={{opacity :[0.6,0.8,1] , y:0}}
+     transition={{duration :2 }}
+     viewport={{once:true}}
+     className="flex flex-col h-auto w-full rounded-xl justify-center items-center ">
       {/* <div class="flex justify-center">
         <button className="mt-20 group p-5 cursor-pointer relative text-xl font-normal border-0 flex items-center justify-center bg-transparent text-red-500 h-auto w-[170px] overflow-hidden transition-all duration-100">
           <span className="group-hover:w-full absolute left-0 h-full w-5 border-y border-l border-red-500 transition-all duration-500">
@@ -33,7 +38,7 @@ const About = () => {
         </p>
         
       </div>
-    </div>
+    </motion.div>
   )
 }
 

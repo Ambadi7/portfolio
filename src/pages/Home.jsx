@@ -2,10 +2,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row p-5  gap-5 h-[500px] w-full rounded-xl">
+    <motion.div
+     initial={{opacity : 0,y:50}}
+     whileInView={{opacity :1 , y:0}}
+     transition={{duration :2}}
+     viewport={{once:true}}
+     className="flex flex-col md:flex-row p-5  gap-5 h-[700px] md:h-[500px] w-full rounded-xl">
       {/* LEFT Details*/}
       <div className="flex flex-col justify-center gap-10 w-full md:w-[500px] lg:w-[600px] h-full rounded font-Ubuntu-mono p-4">
         {/* 1 */}
@@ -35,12 +41,12 @@ const Home = () => {
         </div>
       </div>
       {/* RIGHT image*/}
-      <div className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-full rounded ">
-        <img src="/images/home2.jpg" className=' h-60 md:h-[450px] lg:h-[480px] '  alt="" />
+      <div className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-auto rounded ">
+        <img src="/images/home2.jpg" className=' h-60 md:h-[450px] lg:h-[480px] object-contain'  alt="" />
         {/* <img src="/images/home2.png" className=' h-70 md:h-[450px] lg:h-[480px] ' alt="" /> */}
       </div>
         
-    </div>
+    </motion.div>
   )
 }
 

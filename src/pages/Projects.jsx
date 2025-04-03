@@ -17,7 +17,12 @@ const Projects = () => {
   };
   
   return (
-    <div className="flex flex-col items-center h-fit  w-full bg-fuchsia-950 rounded-xl p-2 md:p-4 justify-center">
+    <motion.div
+     initial={{opacity : 0,y:50}}
+     whileInView={{opacity :1 , y:0}}
+     transition={{duration :2}}
+     viewport={{once:true}}
+     className="flex flex-col items-center h-fit  w-full bg-fuchsia-950 rounded-xl p-2 md:p-4 justify-center">
       <div className="h-16 flex items-center justify-center">
         <h2 className="text-3xl font-light ">Projects</h2>
       </div>
@@ -29,17 +34,17 @@ const Projects = () => {
             project.map((item)=>{
               return(
                 <motion.div {...fadeIn}  
-                  key={item.id} className="w-auto md:w-84 md:h-70 bg-black hover:scale-105  rounded-md ">
-                  <div><img src={item.image} alt="" className="h-50 rounded-t-md"/></div>
+                  key={item.id} className="w-auto md:w-84 md:h-65 bg-black hover:scale-105  rounded-md ">
+                  <div><img src={item.image} alt="" className=" object-cover rounded-t-md"/></div>
                   <div className="hidden">{item.description}</div>
-                  <div className="p-2 px-8">
-                    <div className="flex justify-center pb-2">{item.projectName}</div>
-                    <div className="flex gap-1 justify-between">
-                      <div className="flex cursor-pointer rounded-md w-3/7 justify-center hover:scale-115 hover:text-fuchsia-950">
-                        <h6>Live Demo</h6>
+                  <div className="p-4  flex flex-col justify-center  h  items-center">
+                    <div className="flex justify-center pb-2"><h2 className=" font-light text-lg">{item.projectName}</h2></div>
+                    <div className="flex gap-1 justify-between w-full">
+                      <div className="flex cursor-pointer rounded-md w-3/7 justify-center underline-offset-4 hover:scale-115 hover:text-fuchsia-950 hover:underline ">
+                        <h3>Live Demo</h3>
                       </div>
-                      <div className="flex cursor-pointer  rounded-md w-4/7 justify-center hover:scale-115 hover:text-fuchsia-950">
-                        <h6 className="">GitHub-Repository</h6>
+                      <div className="flex cursor-pointer  rounded-md w-5/7 justify-center underline-offset-4 hover:scale-115 hover:text-fuchsia-950 hover:underline ">
+                        <h3 className="">GitHub-Repository</h3>
                       </div>
                     </div>
                   </div>
@@ -55,7 +60,7 @@ const Projects = () => {
 
       </div>
         
-    </div>
+    </motion.div>
   )
 }
 
