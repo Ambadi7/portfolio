@@ -9,7 +9,7 @@ const Skills = () => {
      transition={{duration :2}}
      className="flex flex-col items-center h-auto w-full overflow-hidden  rounded-xl p-4 justify-center">
       <div className="h-16 flex items-center justify-center">
-        <h2 className="text-3xl font-light ">Skills</h2>
+        <h2 className="text-3xl font-light bg-gradient-to-br from-fuchsia-400 via-purple-600 to-fuchsia-950 bg-clip-text text-transparent">Skills</h2>
       </div>
       <div className="flex flex-col  h-auto w-[1095px] p-4 justify-center items-center text-gray-300">
         <div className=" p-8 pb-14 font-roboto font-extralight text-xl ">

@@ -22,7 +22,7 @@ const Projects = () => {
      whileInView={{opacity :1 , y:0}}
      transition={{duration :2}}
      viewport={{once:true}}
-     className="flex flex-col items-center h-fit  w-full bg-fuchsia-950 rounded-xl p-2 md:p-4 justify-center">
+     className="flex flex-col items-center h-fit  w-full bg-gradient-to-tr from-slate-900 via-purple-700 to-gray-200 rounded-xl p-2 md:p-4 justify-center">
       <div className="h-16 flex items-center justify-center">
         <h2 className="text-3xl font-light ">Projects</h2>
       </div>
