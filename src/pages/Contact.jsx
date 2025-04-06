@@ -37,7 +37,7 @@ const Contact = () => {
      viewport={{once:true}}
      className=" h-fit w-full rounded-xl p-4"> 
       <div className="h-16 flex items-center justify-center">
-        <h2 className="text-3xl font-light bg-gradient-to-tr from-blue-600 via-fuchsia-950 to-purple-600 bg-clip-text text-transparent ">Contact</h2>
+        <h2 className="text-3xl font-light bg-gradient-to-br from-fuchsia-400 via-purple-600 to-fuchsia-950 bg-clip-text text-transparent ">Contact</h2>
       </div>
       {/* 1 */}
       <div className="flex-row   justify-between items-center px-3 md:px-10 py-4">

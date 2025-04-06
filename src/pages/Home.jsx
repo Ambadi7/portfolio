@@ -124,14 +124,14 @@ const Home = () => {
       <motion.div
        initial={{ x: 80, opacity : 0 }}
        whileInView={{opacity : 1, x:0}}
+       animate={{scale:[0.4,0.6,0.7]}}
        transition={{
        duration: 2,
        ease: 'easeOut',
        }}
        viewport={{once:true}}
-       className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-auto rounded ">
-        <img src="/images/home2.jpg" className=' h-60 md:h-[450px] lg:h-[480px] object-contain'  alt="" />
-        {/* <img src="/images/home2.png" className=' h-70 md:h-[450px] lg:h-[480px] ' alt="" /> */}
+       className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-auto rounded  ">
+        <img src="/images/home2.jpg" className=' h-auto md:h-[450px] lg:h-[480px] object-contain shadow-2xl shadow-fuchsia-950 rounded-md'  alt="" />
       </motion.div>
         
     </div>
