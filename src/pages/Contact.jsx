@@ -37,7 +37,7 @@ const Contact = () => {
      viewport={{once:true}}
      className=" h-fit w-full rounded-xl p-4"> 
       <div className="h-16 flex items-center justify-center">
-        <h2 className="text-3xl font-light bg-gradient-to-tr from-slate-200 via-purple-700 to-fuchsia-900 bg-clip-text text-transparent ">Contact</h2>
+        <h2 className="text-3xl font-light bg-gradient-to-tr from-blue-600 via-fuchsia-950 to-purple-600 bg-clip-text text-transparent ">Contact</h2>
       </div>
       {/* 1 */}
       <div className="flex-row   justify-between items-center px-3 md:px-10 py-4">
@@ -61,7 +61,7 @@ const Contact = () => {
         <div className="flex flex-col-reverse md:flex-row md:justify-between w-full h-auto font-roboto font-light  text-gray-300">
           {/* connect */}
           <motion.div
-            initial={{ x: -80, opacity : 0 }}
+            initial={{ x: -60, opacity : 0 }}
             whileInView={{opacity : 1, x:0}}
             transition={{
             duration: 2,
@@ -80,7 +80,7 @@ const Contact = () => {
 
           {/* Message section */}
           <motion.div 
-            initial={{ x: 80, opacity : 0 }}
+            initial={{ x: 60, opacity : 0 }}
             whileInView={{opacity : 1, x:0}}
             transition={{
             duration: 2,

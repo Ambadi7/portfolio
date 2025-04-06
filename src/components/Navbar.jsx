@@ -5,12 +5,12 @@ import { useState } from 'react';
 const Navbar = () => {
   const [extendNavbar,setExtendNavbar] = useState(false)
   return (
-    <div className={`px-15 md:px-8  backdrop-blur-[3px] border-b border-fuchsia-950 w-full h-16  fixed top-0 left-0 right-0 z-100 flex justify-between md:items-center transition-all duration-500 ${extendNavbar ? "h-80" : "h-16 "}`}>
+    <div className={`px-10 md:px-8  backdrop-blur-[3px] border-b border-fuchsia-950 w-full h-16  fixed top-0 left-0 right-0 z-100 flex justify-between md:items-center transition-all duration-500 ${extendNavbar ? "h-80" : "h-16 "}`}>
         <div className={`flex h-16 items-center gap-4 font-source-code-pro text-xl text-white`}>
           <h1>Logo </h1>
           <h1>Ambadi</h1>
         </div>
-        <div className={` absolute md:static flex flex-col md:flex-row gap-6 text-gray-300 transition-all duration-500 ${extendNavbar ? "top-18 left-[84vw]" : "top-18 left-[900px] "}`}>
+        <div className={` absolute md:static flex flex-col md:flex-row gap-6 text-gray-300 transition-all duration-500 ${extendNavbar ? "top-18 left-[77vw]" : "top-18 left-[900px] "}`}>
           <h2>Home</h2>
           <h2>About</h2>
           <h2>Projects</h2>
