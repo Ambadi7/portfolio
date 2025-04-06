@@ -28,7 +28,7 @@ const Projects = () => {
       </div>
       <div className="flex   w-ful p-4 justify-center items-center ">
         {/* Grid */}
-        <div className="grid grid-flow-row gap-8 grid-cols-1 md:grid-cols-2  lg:grid-cols-3">
+        <div className="grid grid-flow-row gap-8 grid-cols-1 lg:grid-cols-3 ">
           {/* 1 */}
           {
             project.map((item)=>{
