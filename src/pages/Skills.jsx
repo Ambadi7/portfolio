@@ -31,7 +31,7 @@ const Skills = () => {
             <motion.div 
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1.2, 1, 1,1,1,1,1,1],
             }}
               transition={{
               duration: 1,
@@ -49,7 +49,7 @@ const Skills = () => {
             <motion.div
             animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1.2, 1, 1,1,1,1,1],
             }}
               transition={{
               duration: 1,
@@ -76,7 +76,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1.2, 1,1,1,1,1],
             }}
               transition={{
               duration: 1,
@@ -92,7 +92,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1, 1.2,1,1,1,1],
             }}
               transition={{
               duration: 1,
@@ -120,7 +120,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1, 1,1.2,1,1,1],
             }}
               transition={{
               duration: 1,
@@ -137,7 +137,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1, 1,1,1.2,1,1],
             }}
               transition={{
               duration: 1,
@@ -164,7 +164,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1, 1,1,1,1.2,1],
             }}
               transition={{
               duration: 1,
@@ -180,7 +180,7 @@ const Skills = () => {
             <motion.div
               animate={{
               opacity: [1, 0.6, 1],
-              scale: [1, 1.1, 1],
+              scale: [1,1, 1, 1,1,1,1,1.2],
             }}
               transition={{
               duration: 1,

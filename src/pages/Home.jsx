@@ -124,7 +124,7 @@ const Home = () => {
       <motion.div
        initial={{ x: 80, opacity : 0 }}
        whileInView={{opacity : 1, x:0}}
-       animate={{scale:[0.4,0.6,0.7]}}
+       animate={{scale:[0.4,0.6,0.7,0.8]}}
        transition={{
        duration: 2,
        ease: 'easeOut',

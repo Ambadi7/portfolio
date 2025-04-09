@@ -42,7 +42,7 @@ const Contact = () => {
       {/* 1 */}
       <div className="flex-row   justify-between items-center px-3 md:px-10 py-4">
 
-        <div className=" md:w-[500px] h-auto ">
+        <div className="flex justify-center md:w-[500px] h-auto ">
           <motion.div 
             initial={{ x: -80, opacity : 0 }}
             whileInView={{opacity : 1, x:0}}
@@ -58,7 +58,7 @@ const Contact = () => {
         </div>
 
         {/* 2 */}
-        <div className="flex flex-col-reverse md:flex-row md:justify-between w-full h-auto font-roboto font-light  text-gray-300">
+        <div className="flex flex-col-reverse md:flex-row items-center md:justify-between w-full h-auto font-roboto font-light  text-gray-300">
           {/* connect */}
           <motion.div
             initial={{ x: -60, opacity : 0 }}
