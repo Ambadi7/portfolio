@@ -4,11 +4,15 @@ import EmailIcon from '@mui/icons-material/Email';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { easeInOut } from 'framer-motion/dom';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   const [isVisible,setIsVisible] = useState(true)
 
+  // This for welcome blink
+
+  
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setIsVisible(false);
@@ -19,7 +23,7 @@ const Home = () => {
   return (
     <div
      
-     className="flex flex-col md:flex-row p-5  gap-5 h-[700px] md:h-[500px] w-full rounded-xl">
+     id='home' className="flex flex-col md:flex-row p-5  gap-5 h-[600px] md:h-[500px] w-full rounded-xl">
       {/* LEFT Details*/}
       <motion.div
        initial={{ x: -80, opacity : 0 }}
@@ -29,17 +33,21 @@ const Home = () => {
        ease: 'easeOut',
        }}
        viewport={{once:true}}
-       className="flex flex-col justify-center gap-10 w-full md:w-[500px] lg:w-[600px] h-full rounded font-Ubuntu-mono p-4">
-        {/* 1 */}
-        <div className='text-3xl'>
-        <motion.div 
-        initial={{opacity :1}}
-        animate={{opacity : isVisible ? 1:0}}
-        transition={{duration :2, ease:'easeInOut'
-        }}
-        >
-          {isVisible && <h1>Welcome!</h1>}
-        </motion.div>
+       className="flex flex-col items-center md:items-start md:justify-center gap-8 md:gap-10 w-full md:w-[500px] lg:w-[600px] h-full rounded font-Ubuntu-mono p-4">
+        {/*Left 1 */}
+        <div className='text-2xl md:text-3xl'>
+          {/* welcome Displaying */}
+          {isVisible && 
+            <motion.div 
+              initial={{opacity :1}}
+              animate={{opacity : isVisible ? 1:0}}
+              transition={{duration :2, ease:'easeInOut'
+              }}
+              >
+                <h1>Welcome!</h1>
+            </motion.div>
+          }
+        
         <div className='flex gap-3'>
           <div>
             <h1>Hi!</h1>
@@ -53,6 +61,7 @@ const Home = () => {
             <h1>I'm</h1>
           </motion.div>
           <div className='flex'>
+            {/* Name Running */}
             <motion.h1 
             initial={{y:10,opacity:0}}
             whileInView={{y:0,opacity:1}}
@@ -99,20 +108,20 @@ const Home = () => {
         </div>
 
         </div>
-        {/* 2 */}
-        <div className='text-3xl md:text-5xl '>
+        {/*Left 2 */}
+        <div className='text-3xl text-center md:text-start md:text-5xl '>
           <h1>Software Engineer</h1>
         </div>
-        {/* 3 */}
-        <div className='flex gap-4 h-auto items-center'>
-          <button className='border p-2 px-4 text-xl border-fuchsia-950  rounded-md focus:bg-fuchsia-950 hover:bg-fuchsia-950 hover:scale-105 '>Download CV <FileDownloadOutlinedIcon/></button>
+        {/* Left 3 */}
+        <div className='flex flex-col md:flex-row gap-4 h-auto items-center'>
+          <button className='border p-2 px-4 text-lg md:text-xl border-fuchsia-950  rounded-md focus:bg-fuchsia-950 hover:bg-fuchsia-950 hover:scale-105 '>Download CV <FileDownloadOutlinedIcon/></button>
           <div className='flex gap-2'>
-            <div className='hover:scale-110'>
+            <Link to={"https://github.com/Ambadi7"} className='hover:scale-110 '>
               <GitHubIcon/>
-            </div>
-            <div className='hover:scale-110'>
+            </Link>
+            <Link to={"https://www.linkedin.com/in/ambadi-k-r-5a855831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} className='hover:scale-110'>
               <LinkedInIcon/>
-            </div>
+            </Link>
             <div className='hover:scale-110'>
               <EmailIcon/> 
             </div>
@@ -131,7 +140,7 @@ const Home = () => {
        }}
        viewport={{once:true}}
        className="flex justify-center w-full md:w-[500px] lg:w-[600px]  h-auto rounded  ">
-        <img src="/images/home2.jpg" className=' h-auto md:h-[450px] lg:h-[480px] object-contain shadow-2xl shadow-fuchsia-950 rounded-md'  alt="" />
+        <img src="/images/home2.jpg" className=' h-96 md:h-auto lg:h-[480px] rounded-md object-contain'  alt="" />
       </motion.div>
         
     </div>

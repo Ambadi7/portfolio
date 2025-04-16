@@ -7,7 +7,7 @@ const Skills = () => {
      initial={{opacity : 0,y:50}}
      whileInView={{opacity :1 , y:0}}
      transition={{duration :2}}
-     className="flex flex-col items-center h-auto w-full overflow-hidden  rounded-xl p-4 justify-center">
+     id="skills" className="flex flex-col items-center h-auto w-full overflow-hidden  rounded-xl p-4 justify-center">
       <div className="h-16 flex items-center justify-center">
         <h2 className="text-3xl font-light bg-gradient-to-br from-fuchsia-400 via-purple-600 to-violet-800 bg-clip-text text-transparent">Skills</h2>
       </div>

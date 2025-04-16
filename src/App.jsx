@@ -1,4 +1,5 @@
 import Footer from "./components/Footer"
+import Loading_Screen from "./components/Loading_Screen"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -7,11 +8,16 @@ import Projects from "./pages/Projects"
 import Skills from "./pages/Skills"
 
 
+
 function App() {
   
 
   return (
     <>
+
+      {/* <div>
+        <Loading_Screen/>
+      </div> */}
       <div className=" bg-black text-white ">
        {/* Navbar -------------------------- */}
         <div className="">
