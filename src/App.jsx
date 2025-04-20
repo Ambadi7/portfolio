@@ -1,5 +1,7 @@
+import { useState,useEffect } from "react"
 import Footer from "./components/Footer"
 import Loading_Screen from "./components/Loading_Screen"
+import MainContent from "./components/MainContent"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -10,20 +12,32 @@ import Skills from "./pages/Skills"
 
 
 function App() {
-  
+  const [loaded,setLoaded]=useState(true)
 
+  useEffect(()=>{
+      const loadedTimer = setTimeout(()=>{
+        setLoaded(false);
+      },2600);
+  
+      return () => clearTimeout(loadedTimer);
+    },[]);
   return (
     <>
 
-      {/* <div>
-        <Loading_Screen/>
-      </div> */}
-      <div className=" bg-black text-white ">
-       {/* Navbar -------------------------- */}
+      <div className=" bg-black ">
+        { loaded ? <Loading_Screen/> :<MainContent/>}
+        
+      </div>
+      
+      
+      
+
+      {/* <div className=" bg-black text-white ">
+       
         <div className="">
           <Navbar/>
         </div>
-        {/* Body --------------------------- */}
+       
         <div className="flex flex-col gap-6 pt-22 px-3 md:px-18 pb-6">
           <div>
             <Home/>
@@ -41,7 +55,7 @@ function App() {
             <Contact/>
           </div>
         </div>
-        {/* Footer ------------------------- */}
+        
         <div className="">
           <Footer/>
         </div>
@@ -52,7 +66,7 @@ function App() {
         
         
         
-      </div>
+      </div> */}
       
     </>
   )
