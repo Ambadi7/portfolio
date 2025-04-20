@@ -104,7 +104,7 @@ const Contact = () => {
                 <input type="text" name='message' required className='w-full h-10 outline-none bg-transparent focus:border-sky-400 focus:shadow-md shadow-sky-900 border rounded-xl px-2' />
               </div>
               <div className='flex w-full justify-center  pt-6 '>
-                <button type='submit' className='w-40 h-10  border border-sky-400 rounded-xl px-4  hover:bg-sky-800 hover:scale-105 focus:bg-green-600 font-semibold' >Send Message</button>
+                <button type='submit' className='w-40 h-10  border border-sky-400 rounded-xl px-4  hover:bg-sky-700 hover:scale-105 focus:bg-sky-500 font-semibold' >Send Message</button>
               </div>
 
             </form>
