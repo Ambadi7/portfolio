@@ -39,11 +39,11 @@ const Skills = () => {
               repeatType: 'loop',
             }}
               
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/js.png" alt="JavaScript" className="w-7 rounded "/>
               </div>
-              <h3>JavaScript</h3>
+              <h3 className="">JavaScript</h3>
             </motion.div> 
 
             <motion.div
@@ -56,7 +56,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/html-5.png" alt="HTML" className="w-7 rounded"/>
               </div>
@@ -83,7 +83,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/css.png" alt="CSS" className="w-7 rounded"/>
               </div>
@@ -99,7 +99,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/react.png" alt="React" className="w-7 rounded"/>
               </div>
@@ -127,7 +127,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/python.png" alt="Python" className="w-7 rounded"/>
               </div>
@@ -144,7 +144,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/git.png" alt="Git" className="w-7 rounded"/>
               </div>
@@ -171,7 +171,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/mySql.png" alt="MySQL" className="w-7 rounded"/>
               </div>
@@ -187,7 +187,7 @@ const Skills = () => {
               repeat: Infinity,
               repeatType: 'loop',
             }}
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-fuchsia-950  shadow-fuchsia-950  rounded-lg  border-fuchsia-950 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none  animate-pulse ">
               <div>
                 <img src="/images/tailwind.png" alt="Tailwind" className="w-7 rounded"/>
               </div>

@@ -114,7 +114,7 @@ const Home = () => {
         </div>
         {/* Left 3 */}
         <div className='flex flex-col md:flex-row gap-4 h-auto items-center'>
-          <button className='border p-2 px-4 text-lg md:text-xl border-fuchsia-950  rounded-md focus:bg-fuchsia-950 hover:bg-fuchsia-950 hover:scale-105 '>Download CV <FileDownloadOutlinedIcon/></button>
+          <button className='border p-2 px-4 text-lg md:text-xl border-sky-400  rounded-md focus:bg-sky-500 hover:bg-sky-500 hover:scale-108 '>Download CV <FileDownloadOutlinedIcon/></button>
           <div className='flex gap-2'>
             <Link to={"https://github.com/Ambadi7"} className='hover:scale-110 '>
               <GitHubIcon/>

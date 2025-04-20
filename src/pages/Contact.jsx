@@ -54,7 +54,7 @@ const Contact = () => {
             }}
             viewport={{once:true}}
           >
-            <h6 className="font-roboto text-2xl font-extralight text-center  text-fuchsia-600">DO YOU HAVE A PROJECT TO DISCUSS  ?</h6>
+            <h6 className="font-roboto text-2xl font-extralight text-center  text-sky-500">DO YOU HAVE A PROJECT TO DISCUSS  ?</h6>
           </motion.div>
           
         </div>
@@ -93,18 +93,18 @@ const Contact = () => {
             <form onSubmit={sendEmail} ref={form} className='p-2 md:p-4 w-[300px] lg:w-[380px] font-montserrat text-gray-300'>
               <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
                 <h6>Name</h6>
-                <input type="text" name='name' required className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+                <input type="text" name='name' required className='w-full h-10 outline-none bg-transparent focus:border-sky-400 focus:shadow-md shadow-sky-900 border rounded-xl px-2' />
               </div>
               <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
                 <h6>Email</h6>
-                <input type="email" name='email' required className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950 focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+                <input type="email" name='email' required className='w-full h-10 outline-none bg-transparent focus:border-sky-400 focus:shadow-md shadow-sky-900 border rounded-xl px-2' />
               </div>
               <div className='flex flex-col gap-2 pb-3 hover:scale-105'>
                 <h6>Message</h6>
-                <input type="text" name='message' required className='w-full h-10 outline-none bg-transparent focus:border-fuchsia-950  focus:shadow-md shadow-fuchsia-950 border rounded-xl px-2' />
+                <input type="text" name='message' required className='w-full h-10 outline-none bg-transparent focus:border-sky-400 focus:shadow-md shadow-sky-900 border rounded-xl px-2' />
               </div>
               <div className='flex w-full justify-center  pt-6 '>
-                <button type='submit' className='w-40 h-10  border border-fuchsia-950 rounded-xl px-4  hover:bg-fuchsia-950 hover:scale-105 focus:bg-fuchsia-950 font-semibold' >Send Message</button>
+                <button type='submit' className='w-40 h-10  border border-sky-400 rounded-xl px-4  hover:bg-sky-800 hover:scale-105 focus:bg-green-600 font-semibold' >Send Message</button>
               </div>
 
             </form>
