@@ -17,7 +17,7 @@ function App() {
   useEffect(()=>{
       const loadedTimer = setTimeout(()=>{
         setLoaded(false);
-      },2600);
+      },2400);
   
       return () => clearTimeout(loadedTimer);
     },[]);
@@ -26,7 +26,6 @@ function App() {
 
       <div className=" bg-black ">
         { loaded ? <Loading_Screen/> :<MainContent/>}
-        
       </div>
       
       
