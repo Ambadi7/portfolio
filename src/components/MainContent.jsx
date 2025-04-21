@@ -18,6 +18,7 @@ const MainContent = () => {
         {/* Body --------------------------- */}
         <div className="flex flex-col gap-6 pt-22 px-3 md:px-18 pb-6">
           <div>
+            <img src="/public/images/loadingLogo.png" alt="" />
             <Home/>
           </div>
           <div>

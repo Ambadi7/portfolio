@@ -13,6 +13,7 @@ const Loading_Screen = () => {
           transition={{duration :2}}
         >
             <CodeLoading/>
+            <img src="/public/images/loadingLogo.png" alt="" />
         </motion.div>
     </div>
   )
