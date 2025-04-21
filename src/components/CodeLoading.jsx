@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const CodeLoading = () => {
   
   return (
@@ -14,9 +13,7 @@ const CodeLoading = () => {
           
         </div>
         <div className='flex justify-center items-center gap-16 pt-15 pr-12'>
-            <CircleIcon fontSize='large' className=' text-sky-400'/>
-            <CircleIcon fontSize='large' className=' text-sky-400'/>
-            <CircleIcon fontSize='large' className=' text-sky-400'/>
+            <h1 className='text-xl text-white'>hello</h1>
         </div>
         
         
