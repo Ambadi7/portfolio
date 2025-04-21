@@ -9,7 +9,7 @@ const CodeLoading = () => {
         
         <div className='flex relative justify-center items-center '>
           
-          <img src="/public/images/logo.png"  className='h-30  md:h-[300px]' alt="" />
+          <img src="/public/images/loadingLogo.png"  className='h-30  md:h-[300px]' alt="" />
 
           
         </div>
