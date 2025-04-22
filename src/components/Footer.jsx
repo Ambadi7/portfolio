@@ -18,9 +18,9 @@ const Footer = () => {
         <Link to={"https://www.linkedin.com/in/ambadi-k-r-5a855831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} className='rounded-full p-2'>
           <LinkedInIcon/>
         </Link>
-        <div className='rounded-full p-2'>
+        <Link to={"mailto:ambadikr7@gmail.com"} className='rounded-full p-2'>
           <EmailIcon/>
-        </div>
+        </Link>
 
         
         

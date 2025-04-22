@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 const Loading_Screen = () => {
   const [background,setBackground] = useState(false)
 
+  // useeffect for activation of background color  blue
   useEffect(()=>{
     const backgroundTimer = setTimeout(()=>{
       setBackground(true);
@@ -15,6 +16,7 @@ const Loading_Screen = () => {
   },[]);
   return (
     <div className='bg-black h-screen'>
+      {/* blue screen animation and loading screen */}
       <motion.div 
       initial={{}}
       animate={{height:"4rem"}}

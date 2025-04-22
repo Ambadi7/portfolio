@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 const Contact = () => {
@@ -74,9 +75,15 @@ const Contact = () => {
             <h6 className="  text-xl font-extralight text-center pb-2 hover:scale-105">Connect Me</h6>
             
             <div className="flex flex-col font-poppins font-extralight gap-2">
-              <div className='flex hover:scale-105'><EmailIcon/> <h6 className='pl-2'>ambadikr7@gmail.com</h6> </div>
-              <div className='flex hover:scale-105'><LinkedInIcon/> <h6 className='pl-2'>Ambadi K R</h6> </div>
-              <div className='flex hover:scale-105'><GitHubIcon/> <h6 className='pl-2'>Ambadi7</h6> </div>
+              <div className='flex hover:scale-105'>
+                <Link to={"mailto:ambadikr7@gmail.com"} className='flex'><EmailIcon/> <h6 className='pl-2'>ambadikr7@gmail.com</h6> </Link>
+              </div>
+              <div className='flex hover:scale-105'>
+                <Link to={"https://www.linkedin.com/in/ambadi-k-r-5a855831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} className='flex'><LinkedInIcon/> <h6 className='pl-2'>Ambadi K R</h6></Link> 
+              </div>
+              <div className='flex hover:scale-105'>
+                <Link to={"https://github.com/Ambadi7"} className='flex'><GitHubIcon/> <h6 className='pl-2'>Ambadi7</h6></Link> 
+              </div>
             </div>
           </motion.div>
 

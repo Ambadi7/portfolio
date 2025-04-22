@@ -35,7 +35,7 @@ const Projects = () => {
             project.map((item)=>{
               return(
                 <motion.div {...fadeIn}  
-                  key={item.id} className="w-auto h-auto lg:w-84 lg:h-65 bg-black hover:scale-108 border-1 border-sky-400  rounded-xl   hover:shadow-[0_2px_8px_#38bdf8] shadow-[0_0_8px_#38bdf8]">
+                  key={item.id} className="w-auto h-auto lg:w-84 lg:h-65 bg-black hover:scale-108 border-1 border-sky-400  rounded-xl   hover:shadow-[0_2px_8px_#38bdf8] shadow-[0_0_8px_#38bdf8] focus:shadow-[0_2px_8px_#38bdf8] focus:scale-105">
                   <Link to={item.liveLink} className="lg:relative">
                     <img src={item.image} alt="" className=" object-contain rounded-t-xl"/>
                     {/* description show in lg while hover */}
@@ -51,11 +51,11 @@ const Projects = () => {
                     </div>
                     <div className="flex gap-1 justify-between w-full">
                       {/* live Demo */}
-                      <Link to={item.liveLink} className="flex cursor-pointer rounded-md w-3/7 justify-center underline-offset-4 hover:scale-115 text-blue-600 hover:underline ">
+                      <Link to={item.liveLink} className="flex cursor-pointer rounded-md w-3/7 justify-center underline-offset-4 hover:scale-115 text-blue-600 hover:underline focus:underline">
                         <h3>Live Demo</h3>
                       </Link>
                       {/* gitHub-repo */}
-                      <Link to={item.gitHubRepo} className="flex cursor-pointer  rounded-md w-5/7 justify-center underline-offset-4 hover:scale-115 text-blue-600 hover:underline ">
+                      <Link to={item.gitHubRepo} className="flex cursor-pointer  rounded-md w-5/7 justify-center underline-offset-4 hover:scale-115 text-blue-600 hover:underline focus:underline">
                         <h3 className="">GitHub-Repository</h3>
                       </Link>
                     </div>

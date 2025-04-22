@@ -9,6 +9,7 @@ const Navbar = () => {
   const [navbg,setNavbg]=useState(true)
   const [extendNavbar,setExtendNavbar] = useState(false)
 
+  // blue color aniamtion on navbar
   useEffect(()=>{
     const navTimer = setTimeout(()=>{
       setNavbg(false);
