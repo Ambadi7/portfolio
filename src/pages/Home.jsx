@@ -11,16 +11,30 @@ import resume from '/src/assets/Ambadi_K_R.pdf'
 const Home = () => {
   const [isVisible,setIsVisible] = useState(true)
 
-  // This for welcome blink
+  const [toggle ,setToggle] = useState(true)
+
+  
 
   
   useEffect(()=>{
+    // This for welcome blink
     const timer = setTimeout(()=>{
       setIsVisible(false);
     },2500);
 
     return () => clearTimeout(timer);
+
+    
+    
   },[]);
+  //this for toggle th color
+  useEffect(()=>{
+    const toggleInterval = setInterval(()=>{
+      setToggle(value=>!value)
+    },200)
+  
+    return()=> clearInterval(toggleInterval);
+  },[])
   return (
     <div
      
@@ -111,7 +125,7 @@ const Home = () => {
         </div>
         {/*Left 2 */}
         <div className='flex gap-4 text-3xl text-center md:text-start md:text-5xl '>
-          <h1>Software</h1><h1 className={`${isVisible ? " text-white" : " text-sky-500"}`}>Developer</h1>
+          <h1 className={`${toggle ? " text-sky-500" : "text-white"}`}>Software</h1><h1 className={`${toggle ? " text-white" : " text-sky-500"}`}>Developer</h1>
         </div>
         {/* Left 3 */}
         <div className='flex flex-col md:flex-row gap-4 h-auto items-center'>

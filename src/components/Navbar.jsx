@@ -10,14 +10,16 @@ const Navbar = () => {
   const logo = "</>"
   const [navbg,setNavbg]=useState(true)
   const [extendNavbar,setExtendNavbar] = useState(false)
+  
 
 
   //reload on logo click
   const handleReloadClick = () =>{
     window.location.href= '/';
   }
-  // blue color aniamtion on navbar
+  
   useEffect(()=>{
+    // blue color aniamtion on navbar
     const navTimer = setTimeout(()=>{
       setNavbg(false);
 

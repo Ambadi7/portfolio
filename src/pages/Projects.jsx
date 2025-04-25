@@ -44,7 +44,7 @@ const Projects = () => {
                       {item.description }
                     </div>
                   </Link>
-                  <Link to={item.liveLink} className="p-4 flex flex-col justify-center  h  items-center">
+                  <div to={item.liveLink} className="p-4 flex flex-col justify-center  h  items-center">
                     <div className="flex justify-center pb-2"><h2 className=" font-light text-lg">{item.projectName}</h2></div>
                     {/* description */}
                     <div className="lg:hidden p-2 font-montserrat font-light">
@@ -60,7 +60,7 @@ const Projects = () => {
                         <h3 className="">GitHub-Repository<GitHubIcon className="text-white pl-1"/> </h3>
                       </Link>
                     </div>
-                  </Link>
+                  </div>
                   
                 </motion.div>
               )

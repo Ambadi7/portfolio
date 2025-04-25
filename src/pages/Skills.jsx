@@ -39,7 +39,7 @@ const Skills = () => {
               repeatType: 'loop',
             }}
               
-            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer  animate-pulse ">
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110  active:bg-sky-500 active:text-black hover:cursor-pointer  animate-pulse ">
               <div>
                 <img src="/images/js.png" alt="JavaScript" className="w-7 rounded "/>
               </div>
