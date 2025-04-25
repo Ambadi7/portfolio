@@ -5,6 +5,7 @@ import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import resume from '/src/assets/Ambadi_K_R.pdf'
 
 
 const Home = () => {
@@ -109,12 +110,12 @@ const Home = () => {
 
         </div>
         {/*Left 2 */}
-        <div className='text-3xl text-center md:text-start md:text-5xl '>
-          <h1>Software Developer</h1>
+        <div className='flex gap-4 text-3xl text-center md:text-start md:text-5xl '>
+          <h1>Software</h1><h1 className={`${isVisible ? " text-white" : " text-sky-500"}`}>Developer</h1>
         </div>
         {/* Left 3 */}
         <div className='flex flex-col md:flex-row gap-4 h-auto items-center'>
-          <button className='border p-2 px-4 text-lg md:text-xl border-sky-400  rounded-md focus:bg-sky-500 hover:bg-sky-500 hover:scale-108'>Download CV <FileDownloadOutlinedIcon/></button>
+          <button  className='border p-2 px-4 text-lg md:text-xl border-sky-400  rounded-md focus:bg-sky-500 hover:bg-sky-500 hover:scale-108'><a href={resume} download={resume}>Download CV <FileDownloadOutlinedIcon/></a></button>
           <div className='flex gap-2'>
             <Link to={"https://github.com/Ambadi7"} className='hover:scale-110 '>
               <GitHubIcon/>

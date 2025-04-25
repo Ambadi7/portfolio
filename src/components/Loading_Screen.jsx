@@ -15,7 +15,7 @@ const Loading_Screen = () => {
     return () => clearTimeout(backgroundTimer);
   },[]);
   return (
-    <div className='bg-black h-screen'>
+    <div className='bg-black h-dvh md:h-screen'>
       {/* blue screen animation and loading screen */}
       <motion.div 
       initial={{}}

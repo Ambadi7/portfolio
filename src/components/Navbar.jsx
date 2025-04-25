@@ -5,10 +5,17 @@ import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
+
   const logo = "</>"
   const [navbg,setNavbg]=useState(true)
   const [extendNavbar,setExtendNavbar] = useState(false)
 
+
+  //reload on logo click
+  const handleReloadClick = () =>{
+    window.location.href= '/';
+  }
   // blue color aniamtion on navbar
   useEffect(()=>{
     const navTimer = setTimeout(()=>{
@@ -20,7 +27,7 @@ const Navbar = () => {
   },[]);
   return (
     <div className={`px-10 md:px-8  backdrop-blur-[3px] border-b border-sky-400 shadow-[0_0_10px_#38bdf8]  w-full h-16  fixed top-0 left-0 right-0 z-100 flex justify-between md:items-center transition-all duration-500 ${extendNavbar ? "h-80" : "h-16 "} ${navbg ? " bg-sky-400":""}`}>
-        <div className={`flex h-16 items-center gap-4 font-source-code-pro text-xl text-white`}>
+        <div onClick={handleReloadClick} className={`flex h-16 items-center gap-4 font-source-code-pro text-xl text-white cursor-pointer`}>
           <h1 className=' stroke-2 stroke-sky-400'>{logo}</h1>
           <NavLink to="">Ambadi</NavLink>
         </div>
