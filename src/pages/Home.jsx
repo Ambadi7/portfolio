@@ -125,7 +125,7 @@ const Home = () => {
         </div>
         {/*Left 2 */}
         <div className='flex gap-4 text-3xl text-center md:text-start md:text-5xl '>
-          <h1 className={`${toggle ? " text-sky-500" : "text-white"}`}>Software</h1><h1 className={`${toggle ? " text-white" : " text-sky-500"}`}>Developer</h1>
+          <h1 className={`text-white`}>Software</h1><h1 className={` ${toggle ? " text-white" : " text-sky-500"}`}>Developer</h1>
         </div>
         {/* Left 3 */}
         <div className='flex flex-col md:flex-row gap-4 h-auto items-center'>
