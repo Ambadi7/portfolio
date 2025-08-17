@@ -14,7 +14,7 @@ const CodeLoading = () => {
         transition={{duration :1.5 , ease :'easeOut'}}
          className='flex relative justify-center items-center '>
           
-          <img src="/images/loadingLogo.png"  className='h-30  md:h-[300px]' alt="" />
+          <img src="/images/loadingLogo.webp"  className='h-30  md:h-[300px]' alt="" loading='eager'/>
 
           
         </motion.div>

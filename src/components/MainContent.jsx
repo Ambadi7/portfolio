@@ -10,7 +10,7 @@ import Footer from './Footer'
 const MainContent = () => {
   return (
     <div>
-         <div className=" bg-black text-white ">
+        <div className=" bg-black text-white ">
        {/* Navbar -------------------------- */}
         <div className="">
           <Navbar/>

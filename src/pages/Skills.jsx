@@ -16,7 +16,7 @@ const Skills = () => {
           The Skills, tools and technologies I use :
         </div>
         {/* Grid */}
-        <div className="grid grid-flow-row gap-10 grid-cols-1 md:grid-cols-2 ">
+        <div className="grid grid-flow-row gap-10 grid-cols-2 md:grid-cols-2 ">
           {/* grid1 */}
           <motion.div
             initial={{ x: -150, opacity : 0 }}
@@ -129,9 +129,9 @@ const Skills = () => {
             }}
             className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer animate-pulse ">
               <div>
-                <img src="/images/python.png" alt="Python" className="w-7 rounded"/>
+                <img src="/images/nodeJS.png" alt="Python" className="w-7 rounded"/>
               </div>
-              <h3>Python</h3>
+              <h3>Node JS</h3>
             </motion.div>
           
             <motion.div
@@ -146,9 +146,9 @@ const Skills = () => {
             }}
             className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer animate-pulse ">
               <div>
-                <img src="/images/git.png" alt="Git" className="w-7 rounded"/>
+                <img src="/images/express.png" alt="Git" className="w-7 rounded"/>
               </div>
-              <h3>Git</h3>
+              <h3>express</h3>
             </motion.div>
           </motion.div>
           {/* grid4 */}
@@ -173,9 +173,9 @@ const Skills = () => {
             }}
             className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer animate-pulse ">
               <div>
-                <img src="/images/mySql.png" alt="MySQL" className="w-7 rounded"/>
+                <img src="/images/mongodb.png" alt="MySQL" className="w-7 rounded"/>
               </div>
-              <h3>MySQL</h3>
+              <h3>MongoDB</h3>
             </motion.div>
             <motion.div
               animate={{
@@ -192,6 +192,95 @@ const Skills = () => {
                 <img src="/images/tailwind.png" alt="Tailwind" className="w-7 rounded"/>
               </div>
               <h3>Tailwind</h3>
+            </motion.div>
+          </motion.div>
+          {/* grid5 */}
+          <motion.div
+            initial={{ x: -150, opacity : 0 }}
+            whileInView={{opacity : 1, x:0}}
+            transition={{
+            duration: 2,
+            ease: 'easeOut',
+            }}
+            viewport={{once:true}}
+
+           className="flex flex-col lg:flex-row gap-10">
+            <motion.div 
+              animate={{
+              opacity: [1, 0.6, 1],
+              scale: [1.2, 1, 1,1,1,1,1,1],
+            }}
+              transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: 'loop',
+            }}
+              
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110  active:bg-sky-500 active:text-black hover:cursor-pointer  animate-pulse ">
+              <div>
+                <img src="/images/python.png" alt="Python" className="w-7 rounded"/>
+              </div>
+              <h3>Python</h3>
+            </motion.div> 
+
+            <motion.div
+            animate={{
+              opacity: [1, 0.6, 1],
+              scale: [1,1.2, 1, 1,1,1,1,1],
+            }}
+              transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: 'loop',
+            }}
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer  animate-pulse ">
+              <div>
+                <img src="/images/git.png" alt="Git" className="w-7 rounded"/>
+              </div>
+              <h3>Git</h3>
+            </motion.div>
+          </motion.div>
+          {/* grid6 */}
+          <motion.div
+            initial={{ x: 150, opacity : 0 }}
+            whileInView={{opacity : 1, x:0}}
+            transition={{
+            duration: 2,
+            ease: 'easeOut',
+            }}
+            viewport={{once:true}}
+           className="flex flex-col lg:flex-row gap-10">
+            <motion.div
+              animate={{
+              opacity: [1, 0.6, 1],
+              scale: [1,1, 1.2, 1,1,1,1,1],
+            }}
+              transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: 'loop',
+            }}
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer  animate-pulse ">
+              <div>
+                <img src="/images/mySql.png" alt="MySQL" className="w-7 rounded"/>
+              </div>
+              <h3>MySQL</h3>
+            </motion.div>
+            <motion.div
+              animate={{
+              opacity: [1, 0.6, 1],
+              scale: [1,1, 1, 1.2,1,1,1,1],
+            }}
+              transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: 'loop',
+            }}
+            className="flex gap-2 justify-center items-center w-40 h-16 inset-shadow-sm inset-shadow-sky-600  shadow-sky-800  rounded-lg  border-sky-400 transition-all transform border-2 shadow-lg hover:scale-115 hover:animate-none focus:scale-110 active:bg-sky-500 active:text-black hover:cursor-pointer animate-pulse ">
+              <div>
+                <img src="/images/postman.png" alt="React" className="w-7 rounded"/>
+              </div>
+              <h3>Postman</h3>
             </motion.div>
           </motion.div>
           
